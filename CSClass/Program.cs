@@ -101,7 +101,7 @@ namespace CSClass
             }
 
 
-                foreach (var student in students)
+            foreach (var student in students)
             {
                 Console.WriteLine(student);
             }
@@ -116,8 +116,11 @@ namespace CSClass
             Product productX = new Product("감자", 2000);
             Product productY = new Product("고구마", 3000);
 
-           Console.WriteLine(productX.ToString());
-           Console.WriteLine(productY.ToString());
+           Console.WriteLine(productX);
+           Console.WriteLine(productY);
+            Console.WriteLine(Product.counter + "개가 생성되었습니다.");
+
+            SingleTon mySingle = SingleTon.getInstance();
         }
     }
 }
