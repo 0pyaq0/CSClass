@@ -113,6 +113,11 @@ namespace CSClass
             Console.WriteLine(MyMath.Abs(52f));
             Console.WriteLine(MyMath.Abs(52L));
 
+            Product productX = new Product("감자", 2000);
+            Product productY = new Product("고구마", 3000);
+
+           Console.WriteLine(productX.ToString());
+           Console.WriteLine(productY.ToString());
         }
     }
 }
